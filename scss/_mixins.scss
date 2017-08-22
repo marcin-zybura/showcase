@@ -1,0 +1,34 @@
+/* Smartphones (portrait) ----------- */
+@mixin smartphonesPortrait {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @content;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@mixin smartphonesLandscape {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+/* Tablets/large smartphones (portrait) ----------- */
+@mixin tabletsPoirtrait {
+  @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+/* Tablets/large smartphones (landscape) ----------- */
+@mixin tabletsLandscape {
+  @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+/* Desktops ----------- */
+@mixin desktops {
+  @media only screen and (min-device-width : 1025px) {
+    @content;
+  }
+}
